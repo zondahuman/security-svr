@@ -22,7 +22,8 @@ import java.util.*;
 *
 */
 public class LoanInfoDeleteTest {
-    private static final String httpURL = "http://localhost:7200/load/platform";
+    private static final String httpURL = "http://localhost:7200/load/platformTest";
+//    private static final String httpURL = "http://localhost:7200/load/platform";
 //    private static final String httpURL = "http://172.16.2.133:9000/load/platform";
 //    private static final String httpURL = "https://172.16.2.133/load/platform";
 //    private static final String httpURL = "https://172.16.2.133:443/load/platform";
@@ -47,8 +48,11 @@ public class LoanInfoDeleteTest {
                 request.put(nav.getKey(), nav.getValue());
             }
 
-            String content = RSAUtil.encrypt(JsonUtil.toJson(request));
-            String sign = RSAUtil.signWithMD5(JsonUtil.toJson(request));
+//            String content = RSAUtil.encrypt(JsonUtil.toJson(request));
+//            String sign = RSAUtil.signWithMD5(JsonUtil.toJson(request));
+
+            String content = JsonUtil.toJson(request);
+            String sign = JsonUtil.toJson(request);
 
             nvps.add(new BasicNameValuePair("content", content));
             nvps.add(new BasicNameValuePair("sign", sign));

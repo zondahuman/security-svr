@@ -22,7 +22,8 @@ import java.util.*;
 *
 */
 public class PayPlanInfoUpdateTest {
-    private static final String httpURL = "http://localhost:7200/load/platform";
+    private static final String httpURL = "http://localhost:7200/load/platformTest";
+//    private static final String httpURL = "http://localhost:7200/load/platform";
 //    private static final String httpURL = "http://172.16.2.133:9000/load/platform";
 //    private static final String httpURL = "https://172.16.2.133:443/load/platform";
 
@@ -47,7 +48,7 @@ public class PayPlanInfoUpdateTest {
             params.setRepayPriAmt("1.0");
             params.setRepayIntAmt("15.23");
             params.setStartDate("20150128");
-            params.setEndDate("20160128");
+            params.setEndDate("201601284");
             request.put("repaymentPlan", params);
 
             for (Iterator<Map.Entry<String, Object>> iterator = request.entrySet().iterator(); iterator.hasNext(); ) {
