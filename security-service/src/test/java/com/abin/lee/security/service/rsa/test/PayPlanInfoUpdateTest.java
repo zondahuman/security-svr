@@ -40,7 +40,7 @@ public class PayPlanInfoUpdateTest {
             request.put("partner", "YOUXIN");
             request.put("businessLine", "YOUXINAAA");
             request.put("contractNo", "YOUXINAAABB");
-            request.put("contractName", "YOUXINAAACC");
+            request.put("contractName", "YOUXIN");
 
             Params params = new Params();
             params.setCounter("5");
@@ -56,8 +56,11 @@ public class PayPlanInfoUpdateTest {
                 request.put(nav.getKey(), nav.getValue());
             }
 
-            String content = RSAUtil.encrypt(JsonUtil.toJson(request));
-            String sign = RSAUtil.signWithMD5(JsonUtil.toJson(request));
+//            String content = RSAUtil.encrypt(JsonUtil.toJson(request));
+//            String sign = RSAUtil.signWithMD5(JsonUtil.toJson(request));
+
+            String content = JsonUtil.toJson(request);
+            String sign = JsonUtil.toJson(request);
 
             nvps.add(new BasicNameValuePair("content", content));
             nvps.add(new BasicNameValuePair("sign", sign));
