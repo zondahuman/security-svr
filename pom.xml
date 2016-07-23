@@ -20,6 +20,54 @@
 
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.13</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-jaxrs -->
+        <dependency>
+            <groupId>com.netflix.feign</groupId>
+            <artifactId>feign-jaxrs</artifactId>
+            <version>8.17.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-httpclient -->
+        <dependency>
+            <groupId>com.netflix.feign</groupId>
+            <artifactId>feign-httpclient</artifactId>
+            <version>8.17.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-okhttp -->
+        <dependency>
+            <groupId>com.netflix.feign</groupId>
+            <artifactId>feign-okhttp</artifactId>
+            <version>8.17.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-slf4j -->
+        <dependency>
+            <groupId>com.netflix.feign</groupId>
+            <artifactId>feign-slf4j</artifactId>
+            <version>8.17.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-gson -->
+        <dependency>
+            <groupId>com.netflix.feign</groupId>
+            <artifactId>feign-gson</artifactId>
+            <version>8.17.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-core -->
+        <dependency>
+            <groupId>com.netflix.feign</groupId>
+            <artifactId>feign-core</artifactId>
+            <version>8.17.0</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/fr.openwide.nuxeo.commons/owsi-nuxeo-commons -->
         <dependency>
             <groupId>fr.openwide.nuxeo.commons</groupId>

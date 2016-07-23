@@ -26,6 +26,7 @@ public class LoanInfoDeleteTest {
 //    private static final String httpURL = "http://localhost:7200/load/platform";
 //    private static final String httpURL = "http://172.16.2.133:9000/load/platform";
 //    private static final String httpURL = "https://172.16.2.133/load/platform";
+//    private static final String httpURL = "https://172.16.2.133/load/platformTest";
 //    private static final String httpURL = "https://172.16.2.133:443/load/platform";
 
     @Test
@@ -36,13 +37,16 @@ public class LoanInfoDeleteTest {
             List<NameValuePair> nvps = new ArrayList<NameValuePair>();
             Map<String, String> request = Maps.newHashMap();
             request.put("reportedId", UUID.randomUUID().toString());
+//            request.put("reportedId", "asdzxc");
             request.put("service", "loanInfoDelete");
             request.put("serviceVersion", "1.0");
-            request.put("partner", "YOUXIN");
-            request.put("businessLine", "youxin1");
-            request.put("contractNo", "YOUXINAAABB");
+            request.put("partner", "LINING");
+//            request.put("partner", "YOUXIN");
+//            request.put("businessLine", "");
+            request.put("businessLine", "LINING01");
+            request.put("contractNo", "ht20160714006");
 //            request.put("contractName", "YOUXINAAACC");
-            request.put("contractName", "");
+            request.put("contractName", "消费合同");
             for (Iterator<Map.Entry<String, String>> iterator = request.entrySet().iterator(); iterator.hasNext(); ) {
                 Map.Entry<String, String> nav = (Map.Entry<String, String>) iterator.next();
                 request.put(nav.getKey(), nav.getValue());
