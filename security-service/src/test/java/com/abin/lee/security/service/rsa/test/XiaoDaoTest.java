@@ -23,7 +23,9 @@ import java.util.List;
 *
 */
 public class XiaoDaoTest {
-    private static final String httpURL = "https://172.16.2.133:443/load/platform";
+//    private static final String httpURL = "https://172.16.2.133:443/load/platform";
+//    private static final String httpURL = "https://36.110.112.103/load/platform";
+    private static final String httpURL = "https://172.16.2.134/load/platform";
 //    private static final String httpURL = "http://10.10.7.246:8080/heika-xiaodai-web/load/platform";
 
     @Test

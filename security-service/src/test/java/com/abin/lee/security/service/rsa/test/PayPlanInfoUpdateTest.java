@@ -23,8 +23,9 @@ import java.util.*;
 */
 public class PayPlanInfoUpdateTest {
 //    private static final String httpURL = "http://localhost:7200/load/platformTest";
-    private static final String httpURL = "http://localhost:7200/load/platform";
+//    private static final String httpURL = "http://localhost:7200/load/platform";
 //    private static final String httpURL = "https://172.16.2.133/load/platform";
+    private static final String httpURL = "https://36.110.112.103/load/platform";
 //    private static final String httpURL = "https://172.16.2.133:443/load/platform";
 
     @Test
