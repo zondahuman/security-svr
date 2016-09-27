@@ -23,10 +23,10 @@ import java.util.*;
 */
 public class PayPlanInfoDeleteTest {
 //    private static final String httpURL = "http://localhost:7200/load/platformTest";
-//    private static final String httpURL = "http://localhost:7200/load/platform";
+    private static final String httpURL = "http://localhost:7200/load/platform";
 //    private static final String httpURL = "https://172.16.2.133/load/platform";
 //    private static final String httpURL = "https://36.110.112.103/load/platform";
-    private static final String httpURL = "https://172.16.2.134/load/platform";
+//    private static final String httpURL = "https://172.16.2.134/load/platform";
 
     @Test
     public void testPayPlanInfoUpdate() throws IOException {
@@ -44,7 +44,7 @@ public class PayPlanInfoDeleteTest {
 //            request.put("partner", "YOUXIN");
 //            request.put("businessLine", "");
             request.put("businessLine", "yy");
-            request.put("contractNo", "c1470990447580");
+            request.put("contractNo", "c1469611375602");
             request.put("contractName", "消费合同");
 
             Params[] paramsArray = new Params[2];

@@ -24,8 +24,8 @@ import java.util.List;
 */
 public class XiaoDaoTest {
 //    private static final String httpURL = "https://172.16.2.133:443/load/platform";
-//    private static final String httpURL = "https://36.110.112.103/load/platform";
-    private static final String httpURL = "https://172.16.2.134/load/platform";
+    private static final String httpURL = "https://36.110.112.103/load/platform";
+//    private static final String httpURL = "https://172.16.2.134/load/platform";
 //    private static final String httpURL = "http://10.10.7.246:8080/heika-xiaodai-web/load/platform";
 
     @Test
@@ -561,6 +561,10 @@ public class XiaoDaoTest {
                 "\"matureDate\":\"20181212\"," +
                 "\"signDate\":\"20161212\"," +
                 "\"term\":\"24\"," +
+                "\"guaranteeType\":\"240001\"," +
+                "\"zone\":\"230001\"," +
+                "\"purpose\":\"260001\"," +
+                "\"industry\":\"290001\"," +
                 "\"repaymentPlan\":" +
                 "[" +
                 "{" +

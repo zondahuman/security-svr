@@ -22,10 +22,11 @@ import java.util.*;
 *
 */
 public class PayPlanInfoAddTest {
-    private static final String httpURL = "http://localhost:7200/load/platformTest";
+//    private static final String httpURL = "https://xd.heika.com/load/platform";
+//    private static final String httpURL = "http://localhost:7200/load/platformTest";
 //    private static final String httpURL = "http://localhost:7200/load/platform";
 //    private static final String httpURL = "https://172.16.2.133/load/platform";
-//    private static final String httpURL = "https://36.110.112.103/load/platform";
+    private static final String httpURL = "https://36.110.112.103/load/platform";
 //    private static final String httpURL = "https://172.16.2.134/load/platform";
 
     @Test
@@ -40,11 +41,13 @@ public class PayPlanInfoAddTest {
             request.put("service", "payPlanInfo");
             request.put("operateType", "ADD");
             request.put("serviceVersion", "1.0");
-            request.put("partner", "YY");
 //            request.put("partner", "YOUXIN");
 //            request.put("businessLine", "");
-            request.put("businessLine", "yy");
-            request.put("contractNo", "c1470990447580");
+//            request.put("partner", "YY");
+//            request.put("businessLine", "yy");
+            request.put("partner", "ytest");
+            request.put("businessLine", "ytest");
+            request.put("contractNo", "c1472719355007");
 //            request.put("contractNo", System.currentTimeMillis()+"");
             request.put("contractName", "消费合同");
 
@@ -81,10 +84,10 @@ public class PayPlanInfoAddTest {
                 request.put(nav.getKey(), nav.getValue());
             }
 
-//            String content = RSAUtil.encrypt(JsonUtil.toJson(request));
-//            String sign = RSAUtil.signWithMD5(JsonUtil.toJson(request));
-            String content = JsonUtil.toJson(request);
-            String sign = JsonUtil.toJson(request);
+            String content = RSAUtil.encrypt(JsonUtil.toJson(request));
+            String sign = RSAUtil.signWithMD5(JsonUtil.toJson(request));
+//            String content = JsonUtil.toJson(request);
+//            String sign = JsonUtil.toJson(request);
 
             nvps.add(new BasicNameValuePair("content", content));
             nvps.add(new BasicNameValuePair("sign", sign));

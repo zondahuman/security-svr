@@ -72,7 +72,7 @@ public class PayPlanInfoUpdateTest {
 
 //            request.put("repaymentPlan", input);
             request.put("repaymentPlan", paramsArray);
-            System.out.println("request="+request);
+            System.out.println("request="+JsonUtil.toJson(request));
 
             for (Iterator<Map.Entry<String, Object>> iterator = request.entrySet().iterator(); iterator.hasNext(); ) {
                 Map.Entry<String, Object> nav = (Map.Entry<String, Object>) iterator.next();
