@@ -569,13 +569,22 @@ public class XiaoDaoTest {
                 "\"rateType\":\"520001\"," +
                 "\"rateCalcMode\":\"270001\"," +
                 "\"riskLevel\":\"510002\"," +
-                "\"guarContractNo\":\"HK_ABCDEFGH\"," +
-                "\"warrantNo\":\"QZH\"," +
+
+                "\"hypopledgeInfo\":" +
+                "[" +
+                "{" +
+                "\"guarContractNo\":\"AAAAAAA\"," +
+                "\"warrantNo\":\"sssss\"," +//(可不填)
                 "\"collateralType\":\"370001\"," + //(可不填)
-                "\"hypopledgeAmount\":\"1212345678912.34\"," +
-                "\"logout\":\"740001\"," +
-                "\"logoutDate\":\"20181115\"," +
-                "\"remark\":\"这是备注，各单位\"," +
+                "\"hypopledgeAmount\":\"12.34\"," +//(可不填)
+                "\"isWriteOff\":\"740001\"," +
+                "\"writeOffDate\":\"20181115\"," +//(可不填)
+                "}" +
+                "]" +
+                "," +
+
+
+                "\"remark\":\"这是备注，各单位\"," +//(可不填)
 
                 "\"repaymentPlan\":" +
                 "[" +
