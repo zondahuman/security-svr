@@ -574,11 +574,11 @@ public class XiaoDaoTest {
                 "[" +
                 "{" +
                 "\"guarContractNo\":\"AAAAAAA\"," +
-                "\"warrantNo\":\"sssss\"," +//(可不填)
-                "\"collateralType\":\"370001\"," + //(可不填)
-                "\"hypopledgeAmount\":\"12.34\"," +//(可不填)
+                "\"warrantNo\":\"\"," +//(可不填)
+                "\"collateralType\":\"\"," + //(可不填)
+                "\"hypopledgeAmount\":\"\"," +//(可不填)
                 "\"isWriteOff\":\"740001\"," +
-                "\"writeOffDate\":\"20181115\"," +//(可不填)
+                "\"writeOffDate\":\"\"," +//(可不填)
                 "}" +
                 "]" +
                 "," +
