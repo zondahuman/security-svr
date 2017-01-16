@@ -560,7 +560,7 @@ public class XiaoDaoTest {
                 "\"ddDate\":\"20161213\"," +
                 "\"matureDate\":\"20181212\"," +
                 "\"signDate\":\"20161212\"," +
-                "\"term\":\"24\"," +
+                "\"term\":\"250004\"," +
                 "\"guaranteeType\":\"240001\"," +
                 "\"zone\":\"230001\"," +
                 "\"purpose\":\"260001\"," +

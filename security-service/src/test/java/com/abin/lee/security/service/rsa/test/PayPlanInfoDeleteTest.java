@@ -2,8 +2,8 @@ package com.abin.lee.security.service.rsa.test;
 
 
 import com.abin.lee.security.common.json.JsonUtil;
-import com.abin.lee.security.common.rsa.RSAUtil;
 import com.abin.lee.security.common.util.HttpClientUtil;
+import com.abin.lee.security.service.rsa.RSAUtil;
 import com.google.common.collect.Maps;
 import org.apache.http.Consts;
 import org.apache.http.NameValuePair;
@@ -23,9 +23,9 @@ import java.util.*;
 */
 public class PayPlanInfoDeleteTest {
 //    private static final String httpURL = "http://localhost:7200/load/platformTest";
-    private static final String httpURL = "http://localhost:7200/load/platform";
+//    private static final String httpURL = "http://localhost:7200/load/platform";
 //    private static final String httpURL = "https://172.16.2.133/load/platform";
-//    private static final String httpURL = "https://36.110.112.103/load/platform";
+    private static final String httpURL = "https://36.110.112.103/load/platform";
 //    private static final String httpURL = "https://172.16.2.134/load/platform";
 
     @Test
@@ -44,7 +44,7 @@ public class PayPlanInfoDeleteTest {
 //            request.put("partner", "YOUXIN");
 //            request.put("businessLine", "");
             request.put("businessLine", "yy");
-            request.put("contractNo", "c1469611375602");
+            request.put("contractNo", "c1478771604641");
             request.put("contractName", "消费合同");
 
             Params[] paramsArray = new Params[2];
